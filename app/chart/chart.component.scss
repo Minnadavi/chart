@@ -1,0 +1,66 @@
+.chart-container {
+  width: 570px;
+  height: 450px;
+  background-color: #1e2437; // Dark blue-gray background
+  color: #ffffff; // White text color
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+
+  h2 {
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+
+  .bottom {
+    #gauge-chart {
+      position: relative; // Enable positioning of content inside this div
+      display: flex;
+      flex-direction: column; // Stack the content inside
+      align-items: center;
+      justify-content: center;
+      height: 100%; // Fill available height
+      width: 100%; // Fill available width
+
+      .content {
+        position: absolute; // Overlay content within the chart container
+        bottom: 100px; // Place content at the bottom of the chart
+        width: 100%; // Full width of the chart
+        display: flex;
+        justify-content: space-between; // Align content to the left and right
+        align-items: center; // Vertically align content
+
+        #left {
+          flex: 1; // Left content takes available space
+         // text-align: left; // Align text to the left
+          font-size: 10px;
+        }
+
+        #rght {
+          display: flex; // Ensures button aligns properly
+       //   justify-content: center; // Align button to the right
+          align-items: center;
+          margin-right: 90px;
+          
+
+          #btn {
+            background-color: #827a7a; // Button background color
+            color: #ffffff; // White text for the button
+            font-size: 10px;
+            font-weight: bold;
+            padding: 3px 9px;
+            border: none;
+            border-radius: 13px;
+
+           
+          }
+        }
+      }
+    }
+    .reuse {
+      margin-bottom: 86px; /* Push progress to the bottom of the container */
+      width: 100%;
+  }
+}
+}
